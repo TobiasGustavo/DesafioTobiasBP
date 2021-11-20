@@ -44,7 +44,7 @@ public class ClienteModel {
 		this.senha = senha;
 	}
 
-	public ClienteModel() { // Teste JUnit 
+	public ClienteModel(long idCliente,  String cpf, String nome) { // Teste JUnit 
 
 	}
 

@@ -16,9 +16,9 @@ public class UserDetailsImpl implements UserDetails {
 	private String password;
 	private List<GrantedAuthority> authorities;
 
-	public UserDetailsImpl(ClienteModel usuario) {
-		this.userName = usuario.getNome();
-		this.password = usuario.getSenha();
+	public UserDetailsImpl(ClienteModel cliente) {
+		this.userName = cliente.getNome();
+		this.password = cliente.getSenha();
 	}
 
 	public UserDetailsImpl() {
