@@ -32,19 +32,19 @@ public class ClienteModel {
 	private String cpf;
 
 	@NotBlank(message = "Ops! O campo senha NÃO pode ficar em branco.")
-	@Size(min = 8, message = "O campo senha tem no mínimo 11.")
+	@Size(min = 8, message = "O campo senha tem no mínimo 8.")
 	private String senha;
 
-	public ClienteModel(long idUsuario, String nome, String endereco, String cpf, String senha) {
+	public ClienteModel(long idCliente, String nome, String endereco, String cpf, String senha) {
 
-		this.idCliente = idUsuario;
+		this.idCliente = idCliente;
 		this.nome = nome;
 		this.endereco = endereco;
 		this.cpf = cpf;
 		this.senha = senha;
 	}
 
-	public ClienteModel() { // construtores
+	public ClienteModel() { // Teste JUnit 
 
 	}
 
