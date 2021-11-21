@@ -22,7 +22,7 @@ import com.desafio.tobias.tobias.repository.ClienteRepository;
 import com.desafio.tobias.tobias.service.ClienteService;
 
 @RestController
-@RequestMapping("/clientes")
+@RequestMapping("/cliente")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class ClienteController {
 
